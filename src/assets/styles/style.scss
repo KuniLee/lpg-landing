@@ -1,0 +1,40 @@
+.navbar-light .navbar-toggler-icon {
+  background-image: url(/src/images/Burger.svg);
+}
+.navbar-toggler {
+  padding: 0.25rem 0.25rem;
+  border: 0;
+}
+.navbar {
+  max-height: $navbar-height;
+}
+.navbar-brand {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 110%;
+}
+.navbar-light .navbar-nav .nav-link {
+  padding-top: 0;
+  padding-bottom: 26px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: $black;
+}
+.offcanvas-body {
+  background-image: url(/src/images/Offcanvas_img.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+
+.first-page {
+  background-image: url(/src/images/DG_image.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 200px;
+  height: calc(100vh - $navbar-height);
+}
