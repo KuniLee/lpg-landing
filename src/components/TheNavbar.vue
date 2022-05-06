@@ -47,7 +47,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="offcanvas" href="#"
+                <a class="nav-link" data-bs-dismiss="offcanvas" href="#"
                   >Противопоказания</a
                 >
               </li>

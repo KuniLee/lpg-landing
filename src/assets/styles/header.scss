@@ -1,0 +1,7 @@
+.first-page {
+  height: calc(100vh - $navbar-height);
+  background-image: url(/src/images/DG_image.png);
+  background-position: bottom right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

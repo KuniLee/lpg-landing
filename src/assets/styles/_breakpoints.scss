@@ -1,4 +1,13 @@
 @include media-breakpoint-up(sm) {
+  h1 {
+    font-size: 72px;
+  }
+  .slogan {
+    font-size: 34px;
+  }
+  .first-page {
+    background-size: 90%;
+  }
 }
 @include media-breakpoint-up(md) {
 }
