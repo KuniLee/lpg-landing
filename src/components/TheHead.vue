@@ -1,13 +1,15 @@
 <template>
-  <div role="main" class="first-page px-3 big-container">
+  <div role="main" class="first-page px-3 container">
     <div class="row h-100">
       <div class="col-12 col-md-10 d-flex flex-column">
         <h1 class="mt-5">LPG-массаж</h1>
-        <p class="slogan">Твой приятный путь к стройному и подтянутому телу</p>
+        <p class="col-10 slogan">
+          Твой приятный путь к стройному и подтянутому телу
+        </p>
         <p class="text-black">
           Оставь заявку сейчас и получи скидку 50% на первое посещение
         </p>
-        <a class="btn btn-primary btn-lg mt-5 col-md-6" href="#" role="button"
+        <a class="btn btn-primary btn-lg mt-4 col-md-6" href="#" role="button"
           >Оставить заявку</a
         >
 
@@ -27,4 +29,19 @@
 export default {}
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.slogan {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  color: #2e2e2e;
+}
+.first-page {
+  height: calc(100vh - $navbar-height);
+  background-image: url(/src/images/DG_image.png);
+  background-position: bottom right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+</style>
