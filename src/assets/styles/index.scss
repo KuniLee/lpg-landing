@@ -3,17 +3,17 @@
 //@import 'bootstrap/scss/bootstrap.scss';
 // @import './header.scss';
 // @import './style.scss';
-//@import './fontslyles.scss';
+@import './fontslyles.scss';
 //@import '_breakpoints';
 
-$offcanvas-horizontal-width: 40px;
-$btn-close-opacity: 1;
-$btn-close-width: 1.5em;
-$grid-gutter-width: 20px;
-$font-family-base: 'Inter', sans-serif;
-$headings-font-weight: 700;
-$headings-line-height: 1.4;
-$headings-color: null;
+// $offcanvas-horizontal-width: 40px;
+// $btn-close-opacity: 1;
+// $btn-close-width: 1.5em;
+// $grid-gutter-width: 20px;
+// $font-family-base: 'Inter', sans-serif;
+// $headings-font-weight: 700;
+// $headings-line-height: 1.4;
+// $headings-color: null;
 
 .big-container {
   @include make-container();

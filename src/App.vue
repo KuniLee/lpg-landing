@@ -23,10 +23,4 @@ export default {
 body {
   padding-top: $navbar-height;
 }
-h1 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 140%;
-}
 </style>

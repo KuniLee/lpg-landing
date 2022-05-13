@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-xl fixed-top navbar-light">
     <div class="container-fluid px-3 px-xxl-5">
-      <a class="navbar-brand text-black" href="#">Pro&nbsp;Telo</a>
+      <a class="navbar-brand text-black me-xl-4" href="#">Pro&nbsp;Telo</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -26,7 +26,7 @@
           ></button>
         </div>
         <div class="offcanvas-body">
-          <ul class="navbar-nav flex-grow-1 justify-content-xl-between">
+          <ul class="navbar-nav flex-grow-1 justify-content-xl-evenly">
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="offcanvas" href="#"
                 >Эффект от процедуры</a

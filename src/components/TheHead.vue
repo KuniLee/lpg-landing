@@ -1,10 +1,12 @@
 <template>
   <div class="first-page">
-    <div role="main" class="px-3 container-fluid h-100">
-      <div class="row h-100">
-        <div class="col-12 col-md-10 col-lg-5 d-flex flex-column">
-          <h1 class="mt-5">LPG-массаж</h1>
-          <p class="col-10 slogan">
+    <div role="main" class="px-3 big-container h-100">
+      <div
+        class="row h-100 align-content-between align-content-lg-center justify-content-lg-center align-items-lg-center"
+      >
+        <div class="col-lg-6 col-xl-5">
+          <h1 class="heading__top mt-5 mt-lg-0">LPG-массаж</h1>
+          <p class="slogan">
             Твой приятный путь к стройному и подтянутому телу
           </p>
           <p class="text-black">
@@ -15,11 +17,13 @@
           >
         </div>
         <div
-          class="row align-items-end align-items-md-center justify-content-end justify-content-lg-start flex-grow-1 header__img"
+          class="col-lg-3 col-md-5 col-8 col-sm-6 offset-md-5 offset-4 offset-lg-1 mb-sm-5 mb-lg-0"
         >
-          <div class="col-8 col-sm-6">
-            <img class="w-100" src="../images/MaskGroup.png" alt="header img" />
-          </div>
+          <img
+            class="w-100"
+            src="../images/Header-image.png"
+            alt="header img"
+          />
         </div>
       </div>
     </div>
@@ -38,7 +42,14 @@ export default {}
   line-height: 140%;
   color: #2e2e2e;
 }
+
+.heading__top {
+  font-size: 36px;
+  font-weight: 700;
+}
+
 .first-page {
+  overflow: hidden;
   height: calc(100vh - $navbar-height);
   background-image: url(/src/images/DG_image.png);
   background-position: bottom right;
@@ -46,7 +57,7 @@ export default {}
   background-repeat: no-repeat;
 }
 @include media-breakpoint-up(md) {
-  h1 {
+  .heading__top {
     font-size: 72px;
   }
   .slogan {
