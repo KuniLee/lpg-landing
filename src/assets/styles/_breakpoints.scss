@@ -10,10 +10,22 @@
   }
 }
 @include media-breakpoint-up(md) {
+  .heading {
+    font-size: 28px;
+  }
 }
 @include media-breakpoint-up(lg) {
+  .heading {
+    font-size: 32px;
+  }
 }
 @include media-breakpoint-up(xl) {
+  .heading {
+    font-size: 36px;
+  }
 }
 @include media-breakpoint-up(xxl) {
+  .heading {
+    font-size: 40px;
+  }
 }
