@@ -11,7 +11,7 @@
           <div
             class="card__effects position-relative pt-4 d-flex flex-column justify-content-between"
           >
-            <p class="card-title text-black text-center">{{ card.title }}</p>
+            <p class="text-black text-center">{{ card.title }}</p>
             <img
               class="w-100"
               :src="require(`@/images/efforts/${card.id}.png`)"
@@ -52,19 +52,10 @@ export default {
   font-size: 16px;
   line-height: 140%;
 }
-@include media-breakpoint-up(sm) {
-  .card-title {
-    font-size: 18px;
-  }
-}
+
 @include media-breakpoint-up(md) {
   .slogan {
     font-size: 34px;
-  }
-}
-@include media-breakpoint-up(xl) {
-  .card-title {
-    font-size: 22px;
   }
 }
 </style>

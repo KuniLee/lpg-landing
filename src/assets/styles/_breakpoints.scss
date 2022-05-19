@@ -9,19 +9,28 @@
     background-size: 90%;
   }
 }
-@include media-breakpoint-up(md) {
+@include media-breakpoint-up(sm) {
   .heading {
     font-size: 28px;
+  }
+  p {
+    font-size: 18px;
   }
 }
 @include media-breakpoint-up(lg) {
   .heading {
     font-size: 32px;
   }
+  p {
+    font-size: 20px;
+  }
 }
 @include media-breakpoint-up(xl) {
   .heading {
     font-size: 36px;
+  }
+  p {
+    font-size: 22px;
   }
 }
 @include media-breakpoint-up(xxl) {
