@@ -7,6 +7,7 @@ $mint: #cad7d0;
 $pink: #fff2f2;
 $green: #014524;
 $light-pink: #fff2f2;
+$grey: #6b6b6b;
 
 :root {
   --bs-body-color: #2e2e2e;
@@ -23,7 +24,5 @@ $headings-line-height: 1.4;
 $headings-color: null;
 
 @import '~bootstrap/scss/functions';
-
 @import '~bootstrap/scss/variables';
-
 @import '~bootstrap/scss/mixins';
