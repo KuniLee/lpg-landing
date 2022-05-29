@@ -1,5 +1,5 @@
 <template>
-  <div class="cards">
+  <div class="bg-pink back">
     <div class="big-container">
       <h1 class="heading text-center">Эффект от процедуры</h1>
       <div class="row row-flex gy-3 justify-content-lg-center">
@@ -42,10 +42,8 @@ export default {
   background-color: $white;
   border-radius: 20px;
 }
-.cards {
+.bg-pink {
   background-color: $pink;
-  padding-top: 8vh;
-  padding-bottom: 8vh;
 }
 .card-title {
   font-weight: 400;

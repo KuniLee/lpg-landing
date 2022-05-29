@@ -8,21 +8,42 @@
   .first-page {
     background-size: 90%;
   }
-}
-@include media-breakpoint-up(sm) {
   .heading {
     font-size: 28px;
   }
+  .subheading {
+    font-size: 24px;
+  }
   p {
     font-size: 18px;
+  }
+}
+@include media-breakpoint-up(md) {
+  $back-padding: 80px;
+  .back {
+    padding-top: $back-padding;
+    padding-bottom: $back-padding;
+  }
+  .back-margin {
+    margin-bottom: 80px;
   }
 }
 @include media-breakpoint-up(lg) {
   .heading {
     font-size: 32px;
   }
+  .subheading {
+    font-size: 26px;
+  }
   p {
     font-size: 20px;
+  }
+  .back {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+  .back-margin {
+    margin-bottom: 112px;
   }
 }
 @include media-breakpoint-up(xxl) {

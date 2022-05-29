@@ -2,7 +2,7 @@
 // @import './base.scss';
 //@import 'bootstrap/scss/bootstrap.scss';
 // @import './header.scss';
-// @import './style.scss';
+@import './style.scss';
 @import './fontslyles.scss';
 @import '_breakpoints';
 
@@ -14,8 +14,3 @@
 // $headings-font-weight: 700;
 // $headings-line-height: 1.4;
 // $headings-color: null;
-
-.big-container {
-  @include make-container();
-  max-width: 1720px;
-}

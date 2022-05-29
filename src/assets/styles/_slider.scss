@@ -1,0 +1,80 @@
+.swiper-button-prev,
+.swiper-button-next {
+  width: 56px;
+  height: 57px;
+}
+.swiper-button-prev {
+  left: 20px;
+}
+.swiper-button-next {
+  right: 20px;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: url('@/images/results/prev.svg');
+}
+.swiper-button-next:after {
+  transform: scale(-1, 1);
+}
+
+.swiper {
+  width: 100%;
+  margin-bottom: 20px;
+  position: static;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: $grey;
+  opacity: 1;
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next,
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {
+  transform: scale(1);
+  background: transparent;
+  border: 1px solid $grey;
+  opacity: 1;
+}
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next,
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {
+  background: transparent;
+  border: 1px solid $grey;
+  opacity: 1;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -20px;
+}
+
+@include media-breakpoint-up(md) {
+  .swiper {
+    margin-bottom: 30px;
+  }
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0;
+  }
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    content: url('@/images/results/prev-black.svg');
+  }
+  .swiper-button-prev {
+    left: 10px;
+  }
+  .swiper-button-next {
+    right: 10px;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .swiper {
+    margin-bottom: 40px;
+  }
+}

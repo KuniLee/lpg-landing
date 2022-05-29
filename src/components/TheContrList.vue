@@ -1,6 +1,6 @@
 <template>
   <div class="position-relative">
-    <div class="bg-mint"></div>
+    <div class="bg-contr bg-mint"></div>
     <div class="big-container back">
       <div class="row">
         <div
@@ -57,17 +57,12 @@ export default {
 </script>
 
 <style lang="scss">
-.bg-mint {
-  background-color: #cad7d0;
+.bg-contr {
   position: absolute;
   bottom: 0;
-  height: calc(100% - 15vh);
+  top: 118px;
   width: 100%;
   z-index: -1;
-}
-.back {
-  padding-top: 8vh;
-  padding-bottom: 8vh;
 }
 .list {
   list-style: none;
@@ -82,8 +77,6 @@ export default {
   padding: 8px 5%;
   font-size: 16px;
 }
-.contr-img {
-}
 
 .list-item::before {
   background-color: $green;
@@ -96,18 +89,22 @@ export default {
   overflow: hidden;
 }
 
-@include media-breakpoint-up(sm) {
-}
 @include media-breakpoint-up(md) {
   .list-item {
     padding: 10px 5%;
     font-size: 18px;
     margin-left: -20px;
   }
+  .bg-contr {
+    top: 140px;
+  }
 }
 @include media-breakpoint-up(lg) {
   .list {
     justify-content: center;
+  }
+  .bg-contr {
+    top: 200px;
   }
 }
 @include media-breakpoint-up(xl) {

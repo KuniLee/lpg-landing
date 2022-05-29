@@ -38,7 +38,7 @@
               {{ stage.id }}
             </p>
             <div v-else>
-              <p class="heading stage-title">{{ stage.title }}</p>
+              <p class="subheading stage-title">{{ stage.title }}</p>
               <p class="stage-text">
                 {{ stage.text }}
               </p>

@@ -1,8 +1,33 @@
 .big-container {
   @include make-container();
-  display: flex;
-  flex-wrap: inherit;
-  align-items: center;
-  justify-content: space-between;
   max-width: 1720px;
+}
+
+.back {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.bg-mint {
+  background-color: $mint;
+}
+.back-margin {
+  margin-bottom: 60px;
+}
+.heading {
+  font-size: 20px;
+
+  margin-bottom: 30px;
+}
+.subheading {
+  font-size: 16px;
+}
+
+.unselectable {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
 }
