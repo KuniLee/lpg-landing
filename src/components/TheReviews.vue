@@ -1,40 +1,51 @@
 <template>
   <div class="back-margin">
-    <div class="big-container">
-      <h1 class="heading text-center">Отзывы</h1>
-
-      <div class="row justify-content-center position-relative unselectable">
-        <div class="col-md-10">
-          <div class="col-12">
-            <swiper
-              :pagination="{
-                dynamicBullets: true,
-              }"
-              :navigation="true"
-              :modules="modules"
-              :loop="true"
-              :slidesPerView="1"
-              :spaceBetween="16"
-              :breakpoints="{
-                '640': {
-                  slidesPerView: 2,
-                },
-              }"
-            >
+    <h1 class="heading text-center">Отзывы</h1>
+    <div class="bg-monstera">
+      <div class="big-container">
+        <div class="row justify-content-center position-relative unselectable">
+          <div class="col-12 col-sm-8 col-md-6 col-lg-10">
+            <div class="col-12">
+              <swiper
+                class="swiper-review"
+                :pagination="{
+                  dynamicBullets: true,
+                }"
+                :navigation="true"
+                :modules="modules"
+                :loop="true"
+                :slidesPerView="1"
+                :spaceBetween="16"
+                :breakpoints="{
+                  '1024': {
+                    slidesPerView: 2,
+                    spaceBetween: 50,
+                  },
+                  '1400': {
+                    slidesPerView: 2,
+                    spaceBetween: 200,
+                  },
+                  '1900': {
+                    slidesPerView: 2,
+                    spaceBetween: 300,
+                  },
+                }"
               >
-              <swiper-slide
-                class="swiper-slide-review bg-mint"
-                v-for="review in reviews"
-                :key="review.id"
-              >
-                <img
-                  :src="require(`@/images/reviews/${review.id}.png`)"
-                  :alt="`review_image${review.id}`"
-                />
-                <p class="subheading">{{ review.name }}</p>
-                <p>{{ review.text }}</p>
-              </swiper-slide>
-            </swiper>
+                >
+                <swiper-slide
+                  class="swiper-slide-review bg-mint"
+                  v-for="review in reviews"
+                  :key="review.id"
+                >
+                  <img
+                    :src="require(`@/images/reviews/${review.id}.png`)"
+                    :alt="`review_image${review.id}`"
+                  />
+                  <p class="subheading">{{ review.name }}</p>
+                  <p>{{ review.text }}</p>
+                </swiper-slide>
+              </swiper>
+            </div>
           </div>
         </div>
       </div>
@@ -96,9 +107,102 @@ export default {
 </script>
 
 <style lang="scss">
+.bg-monstera {
+  background-image: url(@/images/reviews/MonsteraSm.png);
+  background-size: 768px;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  padding-top: 30px;
+}
+.swiper-review {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 56px;
+    height: 57px;
+    top: 35px;
+  }
+  .swiper-button-prev {
+    left: 20px;
+  }
+  .swiper-button-next {
+    right: 20px;
+  }
+  @include media-breakpoint-up(sm) {
+    .swiper {
+      margin-bottom: 30px;
+    }
+    .swiper-pagination-fraction,
+    .swiper-pagination-custom,
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+      bottom: -20px;
+    }
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+      content: url('@/images/results/prev-black.svg');
+    }
+    .swiper-button-prev {
+      left: 20px;
+    }
+    .swiper-button-next {
+      right: 20px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      top: 50%;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    .swiper-button-prev {
+      left: 10px;
+    }
+    .swiper-button-next {
+      right: 10px;
+    }
+    .swiper-pagination-fraction,
+    .swiper-pagination-custom,
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+      bottom: 0;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    .swiper-button-prev {
+      left: 30px;
+    }
+    .swiper-button-next {
+      right: 30px;
+    }
+  }
+}
 .swiper-slide-review {
+  text-align: center;
   height: auto;
-  max-width: 448px;
+
   border-radius: 20px;
+  padding: 38px 29px;
+  .subheading {
+    margin-top: 24px;
+    margin-bottom: 38px;
+  }
+  p {
+    margin: 0;
+  }
+}
+@include media-breakpoint-up(sm) {
+  .bg-monstera {
+    padding-top: 38px;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .bg-monstera {
+    padding-top: 50px;
+  }
+}
+@include media-breakpoint-up(md) {
+  .bg-monstera {
+    background-image: url(@/images/reviews/monstera.png);
+    background-size: contain;
+  }
 }
 </style>

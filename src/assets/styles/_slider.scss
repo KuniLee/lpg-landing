@@ -1,15 +1,3 @@
-.swiper-button-prev,
-.swiper-button-next {
-  width: 56px;
-  height: 57px;
-}
-.swiper-button-prev {
-  left: 20px;
-}
-.swiper-button-next {
-  right: 20px;
-}
-
 .swiper-button-prev:after,
 .swiper-button-next:after {
   content: url('@/images/results/prev.svg');
@@ -54,27 +42,13 @@
 
 @include media-breakpoint-up(md) {
   .swiper {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
+
   .swiper-pagination-fraction,
   .swiper-pagination-custom,
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 0;
-  }
-  .swiper-button-prev:after,
-  .swiper-button-next:after {
-    content: url('@/images/results/prev-black.svg');
-  }
-  .swiper-button-prev {
-    left: 10px;
-  }
-  .swiper-button-next {
-    right: 10px;
-  }
-}
-@include media-breakpoint-up(lg) {
-  .swiper {
-    margin-bottom: 40px;
   }
 }

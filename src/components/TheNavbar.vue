@@ -1,6 +1,6 @@
 <template>
-  <nav class="navbar big-container navbar-expand-xl fixed-top navbar-light">
-    <div class="container-fluid px-3 px-xxl-5">
+  <nav class="navbar navbar-expand-xl fixed-top navbar-light">
+    <div class="container-fluid big-container">
       <a class="navbar-brand text-black me-xl-4" href="#">Pro&nbsp;Telo</a>
       <button
         class="navbar-toggler"

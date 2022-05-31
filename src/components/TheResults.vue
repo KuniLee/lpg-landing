@@ -57,10 +57,47 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../assets/styles/slider';
+@import '@/assets/styles/slider';
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 56px;
+  height: 57px;
+}
+.swiper-button-prev {
+  left: 20px;
+}
+.swiper-button-next {
+  right: 20px;
+}
 
 .swiper-result {
   height: 360px;
+
+  @include media-breakpoint-up(md) {
+    .swiper {
+      margin-bottom: 30px;
+    }
+
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+      content: url('@/images/results/prev-black.svg');
+    }
+    .swiper-button-prev {
+      left: 10px;
+    }
+    .swiper-button-next {
+      right: 10px;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    .swiper-button-prev {
+      left: 30px;
+    }
+    .swiper-button-next {
+      right: 30px;
+    }
+  }
 }
 .swiper-slide-result img {
   display: block;

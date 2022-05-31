@@ -1,6 +1,6 @@
 <template>
   <div class="first-page">
-    <div role="main" class="px-3 big-container h-100">
+    <div role="main" class="big-container h-100">
       <div
         class="row h-100 align-content-between align-content-lg-center justify-content-lg-center align-items-lg-center"
       >
