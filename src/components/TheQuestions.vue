@@ -110,4 +110,7 @@ export default {
     padding: 40px;
   }
 }
+.accordion-body {
+  padding-top: 0;
+}
 </style>

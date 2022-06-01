@@ -1,7 +1,9 @@
 <template>
   <nav class="navbar navbar-expand-xl fixed-top navbar-light">
-    <div class="container-fluid big-container">
-      <a class="navbar-brand text-black me-xl-4" href="#">Pro&nbsp;Telo</a>
+    <div
+      class="big-container d-flex align-items-center justify-content-between"
+    >
+      <a class="navbar-brand text-black me-xl-5" href="#">Pro&nbsp;Telo</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -26,7 +28,7 @@
           ></button>
         </div>
         <div class="offcanvas-body">
-          <ul class="navbar-nav flex-grow-1 justify-content-xl-evenly">
+          <ul class="navbar-nav flex-grow-1 justify-content-xl-between">
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="offcanvas" href="#"
                 >Эффект от процедуры</a
@@ -48,15 +50,13 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="offcanvas" href="#">Отзывы</a>
+              <a class="nav-link" href="#">Отзывы</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="offcanvas" href="#"
-                >Ваши вопросы</a
-              >
+              <a class="nav-link" href="#questions">Ваши вопросы</a>
             </li>
             <li class="nav-item">
-              <a href="#miID" class="nav-link">Контакты</a>
+              <a href="#contacts" class="nav-link">Контакты</a>
             </li>
           </ul>
         </div>

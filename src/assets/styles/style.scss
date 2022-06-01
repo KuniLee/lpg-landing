@@ -1,6 +1,8 @@
 .big-container {
   @include make-container();
   max-width: 1720px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .back {
@@ -15,7 +17,6 @@
 }
 .heading {
   font-size: 20px;
-
   margin-bottom: 30px;
 }
 .subheading {
