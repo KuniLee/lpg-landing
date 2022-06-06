@@ -138,7 +138,7 @@ export default {
   max-height: $navbar-height;
   background-color: #fff;
   padding-top: 10px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 .navbar-brand {
   padding: 0;
