@@ -1,12 +1,12 @@
 <template>
   <the-head></the-head>
-  <the-effect-cards></the-effect-cards>
-  <the-contr-list></the-contr-list>
-  <the-stages></the-stages>
-  <the-results></the-results>
-  <the-reviews></the-reviews>
-  <the-questions id="questions"></the-questions>
-  <the-contacts id="contacts"></the-contacts>
+  <the-effect-cards anchId="effect"></the-effect-cards>
+  <the-contr-list anchId="contr"></the-contr-list>
+  <the-stages anchId="stages"></the-stages>
+  <the-results anchId="results"></the-results>
+  <the-reviews anchId="reviews"></the-reviews>
+  <the-questions anchId="questions"></the-questions>
+  <the-contacts anchId="contacts"></the-contacts>
 </template>
 
 <script>

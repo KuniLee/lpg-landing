@@ -30,33 +30,60 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav flex-grow-1 justify-content-xl-between">
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="offcanvas" href="#"
+              <a
+                class="nav-link"
+                @click.prevent="scrollTo($event)"
+                href="#effect"
                 >Эффект от процедуры</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-dismiss="offcanvas" href="#"
+              <a
+                class="nav-link"
+                @click.prevent="scrollTo($event)"
+                href="#contr"
                 >Противопоказания</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="offcanvas" href="#"
+              <a
+                class="nav-link"
+                @click.prevent="scrollTo($event)"
+                href="#stages"
                 >Этапы процедуры</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="offcanvas" href="#"
+              <a
+                class="nav-link"
+                @click.prevent="scrollTo($event)"
+                href="#results"
                 >Результаты</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Отзывы</a>
+              <a
+                class="nav-link"
+                @click.prevent="scrollTo($event)"
+                href="#reviews"
+                >Отзывы</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#questions">Ваши вопросы</a>
+              <a
+                class="nav-link"
+                @click.prevent="scrollTo($event)"
+                href="#questions"
+                >Ваши вопросы</a
+              >
             </li>
             <li class="nav-item">
-              <a href="#contacts" class="nav-link">Контакты</a>
+              <a
+                href="#contacts"
+                @click.prevent="scrollTo($event)"
+                class="nav-link"
+                >Контакты</a
+              >
             </li>
           </ul>
         </div>
@@ -66,8 +93,36 @@
 </template>
 
 <script>
+import { onMounted } from 'vue'
+import bootstrap from 'bootstrap/dist/js/bootstrap.bundle.min'
 export default {
   name: 'TheNavbar',
+  setup() {
+    let bsOffcanvas = null
+
+    onMounted(() => {
+      const navOffcanvas = document.getElementById('offcanvasNavbar')
+      bsOffcanvas = new bootstrap.Offcanvas(navOffcanvas)
+    })
+
+    const scrollTo = ({ target }) => {
+      const scrollFunc = () => {
+        document.querySelector(target.getAttribute('href')).scrollIntoView({
+          behavior: 'auto',
+          block: 'start',
+        })
+      }
+      if (bsOffcanvas._isShown) {
+        bsOffcanvas.hide()
+        setTimeout(() => {
+          scrollFunc()
+        }, 500)
+        return
+      }
+      scrollFunc()
+    }
+    return { scrollTo }
+  },
 }
 </script>
 
@@ -122,7 +177,7 @@ export default {
   }
 }
 @include media-breakpoint-up(md) {
-  .offcanvas-end {
+  .offcanvas.offcanvas-end {
     width: 50%;
   }
 }
