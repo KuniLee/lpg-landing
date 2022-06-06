@@ -1,3 +1,10 @@
+.anchor {
+  display: block;
+  position: relative;
+  top: -$navbar-height - 10px;
+  visibility: hidden;
+}
+
 .big-container {
   @include make-container();
   max-width: 1720px;

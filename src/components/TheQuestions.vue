@@ -1,4 +1,5 @@
 <template>
+  <a class="anchor" :id="$attrs.anchId"></a>
   <div class="back-margin">
     <h1 class="heading text-center">Часто задаваемые вопросы</h1>
 

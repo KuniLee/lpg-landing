@@ -2,6 +2,7 @@
   <div class="position-relative">
     <div class="bg-contr bg-mint"></div>
     <div class="big-container back">
+      <a class="anchor" :id="$attrs.anchId"></a>
       <div class="row">
         <div
           class="col-12 col-sm-6 col-lg-9 d-flex flex-column justify-content-between order-lg-2"

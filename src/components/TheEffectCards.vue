@@ -1,5 +1,6 @@
 <template>
   <div class="bg-pink back">
+    <a class="anchor" :id="$attrs.anchId"></a>
     <div class="big-container">
       <h1 class="heading text-center">Эффект от процедуры</h1>
       <div class="row row-flex gy-3 justify-content-lg-center">

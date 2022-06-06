@@ -1,5 +1,6 @@
 <template>
   <div class="back bg-light-mint">
+    <a class="anchor" :id="$attrs.anchId"></a>
     <div class="big-container">
       <h1 class="heading text-center">Этапы процедуры</h1>
       <div v-if="changed" class="row">

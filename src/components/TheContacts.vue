@@ -1,4 +1,5 @@
 <template>
+  <a class="anchor" :id="$attrs.anchId"></a>
   <div class="back-margin">
     <h1 class="heading text-center">Контакты</h1>
     <div class="big-container d-lg-none">

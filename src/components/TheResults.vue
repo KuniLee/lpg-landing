@@ -1,5 +1,6 @@
 <template>
   <div class="back big-container">
+    <a class="anchor" :id="$attrs.anchId"></a>
     <div class="row align-items-center">
       <h1 class="col-12 col-xl-3 heading text-center">
         Результаты наших клиентов
