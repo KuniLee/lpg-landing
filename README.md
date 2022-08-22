@@ -1,4 +1,4 @@
-# lpg-landing
+# Пример верстки лединга студии LGP массажа
 
 ## Project setup
 ```
@@ -17,3 +17,6 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+> Это мудрая цитата
+> Мудрого человека.
